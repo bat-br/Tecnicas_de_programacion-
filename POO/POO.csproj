@@ -7,4 +7,26 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Arreglos.cs" />
+    <Compile Remove="Auto.cs" />
+    <Compile Remove="Calculadora.cs" />
+    <Compile Remove="Ceuntabanaria.cs" />
+    <Compile Remove="CodigoPersona.cs" />
+    <Compile Remove="CodigoRectangulo.cs" />
+    <Compile Remove="Dispositivo.cs" />
+    <Compile Remove="Excepciones.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Arreglos.cs" />
+    <None Include="Auto.cs" />
+    <None Include="Calculadora.cs" />
+    <None Include="Ceuntabanaria.cs" />
+    <None Include="CodigoPersona.cs" />
+    <None Include="CodigoRectangulo.cs" />
+    <None Include="Dispositivo.cs" />
+    <None Include="Excepciones.cs" />
+  </ItemGroup>
+
 </Project>
