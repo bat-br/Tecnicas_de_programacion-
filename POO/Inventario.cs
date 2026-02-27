@@ -1,7 +1,8 @@
 ﻿//Principal
+//La lista es dinamica y el arreglo debo decirle cuantos espacios hay
 Inventario inventario = new Inventario();
 bool salir = false;
-try
+/*try
 {
     while (!salir)
     {
@@ -21,17 +22,10 @@ try
         switch (opcion)
         {
             case 1:
-                if (Suministro != "")
-                {
+              
                     inventario.MostrarSuministros();
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("No hay nada que mostrar");
-                    break;
-                }
-
+                    break;  
+                
 
             case 2:
                         Console.WriteLine("Ingresa el nombre del suministro a buscar:");
@@ -93,13 +87,94 @@ catch (FormatException ex)
 catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
+}*/
+
+while(!salir)
+{
+    try
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Inventario");
+        Console.WriteLine("¿Que opcion deseas hacer?");
+        Console.WriteLine("1- Mostrar");
+        Console.WriteLine("2- Buscar");
+        Console.WriteLine("3- Ordear");
+        Console.WriteLine("4- Invertir");
+        Console.WriteLine("5- Vaciar");
+        Console.WriteLine("6- Agregar suministro");
+        Console.WriteLine("7- Eliminar suministro");
+        Console.WriteLine("8- salir");
+        int opcion = int.Parse(Console.ReadLine() ?? "");
+
+        switch (opcion)
+        {
+            case 1:
+
+                inventario.MostrarSuministros();
+                break;
+
+
+            case 2:
+                Console.WriteLine("Ingresa el nombre del suministro a buscar:");
+                string nombre = Console.ReadLine() ?? "";
+                inventario.BuscarSuministro(nombre);
+                break;
+            case 3:
+                inventario.OrdenarPorNombre();
+                break;
+            case 4:
+                inventario.InvertirOrden();
+                break;
+            case 5:
+                inventario.VaciarInventario();
+                break;
+            case 6:
+                Console.WriteLine("Ingresa el nombre del suministro a buscar:");
+                string nombreSum = Console.ReadLine() ?? "";
+
+                Console.WriteLine("Cantidad o Vacio");
+                string cantidad = Console.ReadLine() ?? "";
+
+                if (cantidad != "")
+                {
+                    Console.WriteLine("Prioridad o Vacio");
+                    string prioridad = Console.ReadLine() ?? "";
+
+                    inventario.AgregarSuministro(nombreSum, int.Parse(cantidad), int.Parse(prioridad));
+                }
+                else
+                {
+                    inventario.AgregarSuministro(nombreSum);
+                }
+                break;
+            case 7:
+                Console.WriteLine("Ingresa el nombre del suministro a eliminar:");
+                string nombreEl = Console.ReadLine() ?? "";
+                inventario.EliminarSuministro(nombreEl);
+                break;
+            case 8:
+                salir = true;
+                break;
+            default:
+                Console.WriteLine("No valido");
+                break;
+        }
+
+    }
+    catch (NullReferenceException)
+    {
+        Console.WriteLine("Ocurrio un error: Se intento buscar pero no hay nada");
+
+    }
+    catch (FormatException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
 }
-
-
-
-
-
-
 
 public class Suministro
 {
@@ -154,11 +229,19 @@ public class Inventario
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Inventario de suministros");
-        Console.ForegroundColor = ConsoleColor.Blue; 
+        Console.ForegroundColor = ConsoleColor.Blue;
         foreach (Suministro suministro in suministros)
         {
-            Console.WriteLine($"{suministro.Nombre}");
-            suministro.MostrarInfo();
+            if (suministro != null)
+            {
+
+                Console.WriteLine($"{suministro.Nombre}");
+                suministro.MostrarInfo();
+            }
+            else
+            {
+                Console.WriteLine("No existen datos");
+            }
         }
     }
     public void BuscarSuministro(string nombre)
