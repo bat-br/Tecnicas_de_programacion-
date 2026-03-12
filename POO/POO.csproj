@@ -15,7 +15,12 @@
     <Compile Remove="CodigoPersona.cs" />
     <Compile Remove="CodigoRectangulo.cs" />
     <Compile Remove="Dispositivo.cs" />
+    <Compile Remove="Dispositivos.cs" />
     <Compile Remove="Excepciones.cs" />
+    <Compile Remove="Inventario.cs" />
+    <Compile Remove="Libreria.cs" />
+    <Compile Remove="Persona.cs" />
+    <Compile Remove="Rectangulo.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,7 +31,12 @@
     <None Include="CodigoPersona.cs" />
     <None Include="CodigoRectangulo.cs" />
     <None Include="Dispositivo.cs" />
+    <None Include="Dispositivos.cs" />
     <None Include="Excepciones.cs" />
+    <None Include="Inventario.cs" />
+    <None Include="Libreria.cs" />
+    <None Include="Persona.cs" />
+    <None Include="Rectangulo.cs" />
   </ItemGroup>
 
 </Project>

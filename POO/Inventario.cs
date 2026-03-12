@@ -128,7 +128,7 @@ public class Inventario
     // que almacena varios elementos del mismo tipo
     //Atributos
     private Suministro[] suministros;
-    //
+   
     public Inventario()
     {
         suministros = new Suministro[] //Se agregan siempre estos suministros
