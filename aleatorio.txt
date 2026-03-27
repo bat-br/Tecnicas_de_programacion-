@@ -1,0 +1,3 @@
+Linea 1: Hola mundo
+Linea 2: Python es mejor
+Linea 3: Adios mundo

@@ -10,11 +10,13 @@
   <ItemGroup>
     <Compile Remove="Arreglos.cs" />
     <Compile Remove="Auto.cs" />
+    <Compile Remove="Billar.cs" />
     <Compile Remove="Calculadora.cs" />
     <Compile Remove="Casteos.cs" />
     <Compile Remove="Ceuntabanaria.cs" />
     <Compile Remove="CodigoPersona.cs" />
     <Compile Remove="CodigoRectangulo.cs" />
+    <Compile Remove="Competencia.cs" />
     <Compile Remove="Dispositivo.cs" />
     <Compile Remove="Dispositivos.cs" />
     <Compile Remove="Excepciones.cs" />
@@ -22,19 +24,23 @@
     <Compile Remove="Inventario.cs" />
     <Compile Remove="Juego.cs" />
     <Compile Remove="Libros.cs" />
+    <Compile Remove="ManejodeDats.cs" />
     <Compile Remove="Pagos.cs" />
     <Compile Remove="Persona.cs" />
     <Compile Remove="Rectangulo.cs" />
+    <Compile Remove="UsoBiblioteca.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Arreglos.cs" />
     <None Include="Auto.cs" />
+    <None Include="Billar.cs" />
     <None Include="Calculadora.cs" />
     <None Include="Casteos.cs" />
     <None Include="Ceuntabanaria.cs" />
     <None Include="CodigoPersona.cs" />
     <None Include="CodigoRectangulo.cs" />
+    <None Include="Competencia.cs" />
     <None Include="Dispositivo.cs" />
     <None Include="Dispositivos.cs" />
     <None Include="Excepciones.cs" />
@@ -42,9 +48,23 @@
     <None Include="Inventario.cs" />
     <None Include="Juego.cs" />
     <None Include="Libros.cs" />
+    <None Include="ManejodeDats.cs" />
     <None Include="Pagos.cs" />
     <None Include="Persona.cs" />
     <None Include="Rectangulo.cs" />
+    <None Include="UsoBiblioteca.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BibliotecaDeLiros">
+      <HintPath>..\BibliotecaDeLiros\bin\Debug\net8.0\BibliotecaDeLiros.dll</HintPath>
+    </Reference>
+    <Reference Include="Extensiones">
+      <HintPath>..\Extensiones\bin\Debug\net8.0\Extensiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ValidacionesBiblioteca">
+      <HintPath>..\ValidacionesBiblioteca\bin\Debug\net8.0\ValidacionesBiblioteca.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
