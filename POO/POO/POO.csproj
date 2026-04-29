@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Arreglo.cs" />
+    <Compile Remove="Arreglos.cs" />
+    <Compile Remove="Auto.cs" />
+    <Compile Remove="Billar.cs" />
+    <Compile Remove="Calculadora.cs" />
+    <Compile Remove="Casteos.cs" />
+    <Compile Remove="Ceuntabanaria.cs" />
+    <Compile Remove="CodigoPersona.cs" />
+    <Compile Remove="CodigoRectangulo.cs" />
+    <Compile Remove="Competencia.cs" />
+    <Compile Remove="Dispositivo.cs" />
+    <Compile Remove="Dispositivos.cs" />
+    <Compile Remove="EjercicioArchivo.cs" />
+    <Compile Remove="Estructuras\Arreglo.cs" />
+    <Compile Remove="Estructuras\Cola.cs" />
+    <Compile Remove="Estructuras\Diccionario.cs" />
+    <Compile Remove="Estructuras\Ejercicio.cs" />
+    <Compile Remove="Estructuras\Lista.cs" />
+    <Compile Remove="Estructuras\ListaEnlazada.cs" />
+    <Compile Remove="Estructuras\Pila.cs" />
+    <Compile Remove="Excepciones.cs" />
+    <Compile Remove="Interfaces.cs" />
+    <Compile Remove="Inventario.cs" />
+    <Compile Remove="Juego.cs" />
+    <Compile Remove="Libros.cs" />
+    <Compile Remove="Lista.cs" />
+    <Compile Remove="LSPH - Copia.cs" />
+    <Compile Remove="ManejodeDats.cs" />
+    <Compile Remove="Pagos.cs" />
+    <Compile Remove="Persona.cs" />
+    <Compile Remove="Rectangulo.cs" />
+    <Compile Remove="RectanguloSp - Copia.cs" />
+    <Compile Remove="RectanguloSp.cs" />
+    <Compile Remove="SLP - Copia.cs" />
+    <Compile Remove="SLP.cs" />
+    <Compile Remove="SOLID\DIP.cs" />
+    <Compile Remove="SOLID\ISP.cs" />
+    <Compile Remove="SOLID\LSPH.cs" />
+    <Compile Remove="SOLID\NoSolid.cs" />
+    <Compile Remove="SOLID\SOLID.cs" />
+    <Compile Remove="UsoBiblioteca.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Arreglo.cs" />
+    <None Include="Arreglos.cs" />
+    <None Include="Auto.cs" />
+    <None Include="Billar.cs" />
+    <None Include="Calculadora.cs" />
+    <None Include="Casteos.cs" />
+    <None Include="Ceuntabanaria.cs" />
+    <None Include="CodigoPersona.cs" />
+    <None Include="CodigoRectangulo.cs" />
+    <None Include="Competencia.cs" />
+    <None Include="Dispositivo.cs" />
+    <None Include="Dispositivos.cs" />
+    <None Include="EjercicioArchivo.cs" />
+    <None Include="Estructuras\Arreglo.cs" />
+    <None Include="Estructuras\Cola.cs" />
+    <None Include="Estructuras\Diccionario.cs" />
+    <None Include="Estructuras\Ejercicio.cs" />
+    <None Include="Estructuras\Lista.cs" />
+    <None Include="Estructuras\ListaEnlazada.cs" />
+    <None Include="Excepciones.cs" />
+    <None Include="Interfaces.cs" />
+    <None Include="Inventario.cs" />
+    <None Include="Juego.cs" />
+    <None Include="Libros.cs" />
+    <None Include="Lista.cs" />
+    <None Include="LSPH - Copia.cs" />
+    <None Include="ManejodeDats.cs" />
+    <None Include="Pagos.cs" />
+    <None Include="Persona.cs" />
+    <None Include="SOLID\DIP.cs" />
+    <None Include="SOLID\ISP.cs" />
+    <None Include="SOLID\LSPH.cs" />
+    <None Include="SOLID\NoSolid.cs" />
+    <None Include="SOLID\Rectangulo.cs" />
+    <None Include="RectanguloSp - Copia.cs" />
+    <None Include="RectanguloSp.cs" />
+    <None Include="SLP - Copia.cs" />
+    <None Include="SOLID\SLP.cs" />
+    <None Include="SOLID\SOLID.cs" />
+    <None Include="UsoBiblioteca.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BibliotecaDeLiros">
+      <HintPath>..\BibliotecaDeLiros\bin\Debug\net8.0\BibliotecaDeLiros.dll</HintPath>
+    </Reference>
+    <Reference Include="Extensiones">
+      <HintPath>..\Extensiones\bin\Debug\net8.0\Extensiones.dll</HintPath>
+    </Reference>
+    <Reference Include="ValidacionesBiblioteca">
+      <HintPath>..\ValidacionesBiblioteca\bin\Debug\net8.0\ValidacionesBiblioteca.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Estructuras\Pila.cs" />
+  </ItemGroup>
+
+</Project>
