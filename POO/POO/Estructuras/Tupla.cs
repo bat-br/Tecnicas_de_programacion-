@@ -14,3 +14,12 @@
 
 Console.WriteLine(personal.Item1);
 Console.WriteLine(persona2.Nombre);
+
+//Devolver tupla metodo
+
+static (int, int) Dividir(int dividiendo, int divisor)
+{
+    return (dividiendo / divisor, dividiendo % divisor);
+}
+var resultado = Dividir(10, 3);
+Console.WriteLine($"Cociente: {resultado.Item1} | Modulo: {resultado.Item2}");
